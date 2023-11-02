@@ -1,7 +1,7 @@
 from setuptools import find_packages,setup
 from typing import List
 HYPHEN_E_DOT="-e ."
-def get_requirements(filepath:str)->list[str]:
+def get_requirements(filepath):
     '''this function return list of requirements'''
     with open(filepath) as file_obj:
         requirements=file_obj.readlines()
